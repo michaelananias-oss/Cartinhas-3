@@ -55,6 +55,9 @@
                 <select id="extra" class="categoria">
                     <option value="">Selecione uma Característica</option>
                     <option value="c-gg">Habilidade Gigante</option>
+                    <option value="e-inf">Energia Infinita</option>
+                    <option value="e-com">Energia Compartilhada</option>
+                    <option value="hp-inf">Vida Infinita</option>
                     <option value="c-pc">Parte de Outras Cartas</option>
                     <option value="hitkill">Hitkill</option>
                     <option value="fusao">Fusões</option>
@@ -70,12 +73,21 @@
                 <label for="anime">Anime de Origem / Personagem: </label>
                 <input type="text" id="anime" class="preco" placeholder="Ex: Dragon Ball / Goku">
 
+                <div class="hpe">
+
+                    <label for="anime">HP: </label>
+                    <input type="text" id="anime" class="preco" placeholder="HP (Mínimo)">
+
+                    <input type="text" id="anime" class="preco" placeholder="HP (Máximo)">
+
+                </div>
+
             </div>
             <button class="btn-filtrar">Aplicar filtros</button>
         </div>
         <ul class="cartas">
             <li class="carta" data-categoria="Comum" data-preco="3" data-anime="Dragon Ball" data-personagem="Goku"
-                data-tipo="C-M" data-hp="1499hp" data-e="1999e" data-extra="">         
+                data-tipo="C-M" data-hp="1500" data-e="2000" data-extra="">         
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/Goku Base.png" alt="Goku Base - Dragon Ball Super">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Goku Base</h2>
@@ -92,7 +104,7 @@
                 </div>
             </li>
             <li class="carta" data-categoria="SuperRara" data-preco="3" data-anime="Naruto" data-personagem="Minato"
-                data-tipo="C-M" data-hp="3999hp" data-e="5999e" data-extra="">
+                data-tipo="C-M" data-hp="4000" data-e="6000" data-extra="">
                 <img src="./src/imagens/Minato.png" alt="Minato">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Minato</h2>
@@ -109,7 +121,7 @@
                 </div>
             </li>
             <li class="carta" data-categoria="Rara" data-preco="6" data-anime="Naruto" data-personagem="Naruto"
-                data-tipo="C-T" data-hp="2499hp" data-e="4999e" data-extra="">
+                data-tipo="C-T" data-hp="2500" data-e="5000" data-extra="">
                 <img src="./src/imagens/Naruto Sábio.jpg" alt="Naruto Modo Sábio">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Naruto Modo Sábio</h2>
@@ -129,7 +141,7 @@
                 </div>
             </li>
             <li class="carta" data-categoria="Épica" data-preco="3" data-anime="One Punch Man"
-                data-personagem="Saitama" data-tipo="C-M" data-hp="29999hp" data-e="5999e" data-extra="">
+                data-personagem="Saitama" data-tipo="C-M" data-hp="30000" data-e="6000" data-extra="">
                 <img src="./src/imagens/Saitama.png" alt="Saitama">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Saitama</h2>
@@ -146,7 +158,7 @@
                 </div>
             </li>
             <li class="carta" data-categoria="Rara" data-preco="5" data-anime="Cavaleiros do Zodíaco" data-personagem="Seiya"
-                 data-tipo="C-M" data-hp="2999hp" data-e="3999e" data-extra="">
+                 data-tipo="C-M" data-hp="3000" data-e="4000" data-extra="">
                 <img src="./src/imagens/Seiya V2.png" alt="Seiya Armadura V2">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Seiya</h2>
@@ -165,7 +177,7 @@
                 </div>
             </li>
             <li class="carta" data-categoria="Lendaria" data-preco="5" data-anime="Dragon Ball" data-personagem="Goku"
-                data-tipo="C-T" data-hp="29999hp" data-e="24999e" data-extra="">
+                data-tipo="C-T" data-hp="30000" data-e="25000" data-extra="">
                 <img src="./src/imagens/Goku Ssj Blue.png" alt="Goku Super Saiyajin Blue">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Goku Ssj Blue</h2>
@@ -184,7 +196,7 @@
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="6" data-anime="Jujutsu Kaisen" data-personagem="Nobara"
-                 data-tipo="C-M" data-hp="999hp" data-e="999e" data-extra="girl">
+                 data-tipo="C-M" data-hp="1000" data-e="1000" data-extra="girl">
                 <img src="./src/imagens/Nobara.png" alt="Nobara">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Nobara</h2>
@@ -204,7 +216,7 @@
                 </div>
             </li>
             <li class="carta" data-categoria="SuperRara" data-preco="4" data-anime="Dragon Ball" data-personagem="Goku"
-                 data-tipo="C-T" data-hp="6999hp" data-e="9999e" data-extra="">
+                 data-tipo="C-T" data-hp="7000" data-e="10000" data-extra="">
                 <img src="./src/imagens/Goku Ssj3.png" alt="Goku Ssj3 - Dragon Ball Super">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Goku Ssj3</h2>
@@ -222,7 +234,7 @@
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="5" data-anime="Naruto" data-personagem="Naruto"
-                data-tipo="C-M" data-hp="999hp" data-e="1999e" data-extra="">
+                data-tipo="C-M" data-hp="1000" data-e="2000" data-extra="">
                 <img src="./src/imagens/Naruto Clássico.png" alt="Naruto Jovem - Naruto Clássico">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Naruto</h2>
@@ -241,7 +253,7 @@
                 </div>
             </li>
             <li class="carta" data-categoria="Rara" data-preco="3" data-anime="Dragon Ball" data-personagem="Vegeta"
-                data-tipo="C-M" data-hp="2499hp" data-e="3499e" data-extra="">
+                data-tipo="C-M" data-hp="2500" data-e="3500" data-extra="">
                 <img src="./src/imagens/CARTAS mas organizadas/Rara/Vegeta Ssj DBZ.png"
                     alt="Vegeta Super Saiyajin - Dragon Ball Z">
                 <div class="informacoes">
@@ -259,7 +271,7 @@
                 </div>
             </li>
             <li class="carta" data-categoria="Branca" data-preco="9" data-anime="Shingeki No Kyojin" data-personagem="Armin"
-                 data-tipo="C-M" data-hp="" data-e="" data-extra="">
+                 data-tipo="C-M" data-hp="1" data-e="0" data-extra="">
                 <img src="./src/imagens/CARTAS mas organizadas/Brancas/Armin.png" alt="Armin">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Armin</h2>
@@ -282,7 +294,7 @@
                 </div>
             </li>
             <li class="carta" data-categoria="SuperRara" data-preco="5" data-anime="Dragon Ball" data-personagem="17"
-                data-tipo="C-M" data-hp="5999hp" data-e="" data-extra="">
+                data-tipo="C-M" data-hp="6000" data-e="" data-extra="e-inf">
                 <img src="./src/imagens/CARTAS mas organizadas/Super Rara/17 DBS.png"
                     alt="Android 17 - Dragon Ball Super">
                 <div class="informacoes">
@@ -302,7 +314,7 @@
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="5" data-anime="Dragon Ball" data-personagem="17"
-                data-tipo="C-M" data-hp="1099hp" data-e="-1e" data-extra="">
+                data-tipo="C-M" data-hp="1100" data-e="" data-extra="e-inf">
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/17 GT.png" alt="Android 17 - Dragon Ball GT">
                 <div class="informacoes">
                     <h2 class="nome-personagem">17</h2>
@@ -321,7 +333,7 @@
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="5" data-anime="Boku no Hero" data-personagem="Aizawa"
-                data-tipo="C-M" data-hp="999hp" data-e="999e" data-extra="">
+                data-tipo="C-M" data-hp="1000" data-e="1000" data-extra="">
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/Aizawa.png" alt="Aizawa">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Aizawa</h2>
@@ -335,7 +347,7 @@
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://myheroacademia.fandom.com/wiki/Shota_Aizawa" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>
@@ -357,12 +369,12 @@
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://dragonball.fandom.com/wiki/Baby" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="1" data-anime="Dragon Ball" data-personagem="Bardock"
-                data-tipo="C-M" data-hp="1199hp" data-e="1499e" data-extra="">
+                data-tipo="C-M" data-hp="1200" data-e="1500" data-extra="">
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/Bardock.png" alt="Bardock">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Bardock</h2>
@@ -372,12 +384,12 @@
                     <span class="preco">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://dragonball.fandom.com/wiki/Bardock" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="1" data-anime="Dragon Ball" data-personagem="Bardock"
-                data-tipo="C-T" data-hp="1999hp" data-e="1999e" data-extra="">
+                data-tipo="C-T" data-hp="2000" data-e="2000" data-extra="">
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/Bardock Ssj.png" alt="Bardock Super Saiyajin 1">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Bardock Ssj</h2>
@@ -387,12 +399,12 @@
                     <span class="preco">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://dragonball.fandom.com/wiki/Bardock" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="5" data-anime="Dragon Ball" data-personagem="Bardock"
-                data-tipo="C-Te" data-hp="4999hp" data-e="2999e" data-extra="c-gg">
+                data-tipo="C-Te" data-hp="5000" data-e="3000" data-extra="c-gg">
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/Bardock Oozaru.png" alt="Bardock Oozaru">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Bardock Oozaru</h2>
@@ -406,12 +418,12 @@
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://dragonball.fandom.com/wiki/Bardock" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="3" data-anime="Fullmetal Alchemist" data-personagem="Alphonse"
-                data-tipo="C-M" data-hp="1499hp" data-e="1199e" data-extra="c-gg">
+                data-tipo="C-M" data-hp="1500" data-e="1200" data-extra="c-gg">
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/Alphonse.png" alt="Alphonse">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Alphonse</h2>
@@ -423,12 +435,12 @@
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://fma.fandom.com/wiki/Alphonse_Elric" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="1" data-anime="Cavaleiros do Zodíaco" data-personagem="Andrômeda Negro"
-                data-tipo="C-M" data-hp="1099hp" data-e="1999e" data-extra="">
+                data-tipo="C-M" data-hp="1100" data-e="2000" data-extra="">
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/Andrômeda Negro.png" alt="Andrômeda Negro">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Andrômeda Negro</h2>
@@ -438,12 +450,12 @@
                     <span class="preco">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://saintseiya.fandom.com/pt-br/wiki/Andr%C3%B4meda_Negro" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="1" data-anime="Attack on Titan" data-personagem="Annie"
-                data-tipo="C-M" data-hp="999hp" data-e="899e" data-extra="girl">
+                data-tipo="C-M" data-hp="1000" data-e="900" data-extra="girl">
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/Annie.png" alt="Annie">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Annie</h2>
@@ -453,12 +465,12 @@
                     <span class="preco">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://attackontitan.fandom.com/wiki/Annie_Leonhart" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="1" data-anime="Boku No Hero" data-personagem="Aoyama"
-                data-tipo="C-M" data-hp="999hp" data-e="999e" data-extra="">
+                data-tipo="C-M" data-hp="1000" data-e="1000" data-extra="">
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/Aoyama.png" alt="Aoyama">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Aoyama</h2>
@@ -468,12 +480,12 @@
                     <span class="preco">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://myheroacademia.fandom.com/wiki/Yuga_Aoyama" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="1" data-anime="Boku No Hero" data-personagem="Ashido"
-                data-tipo="C-M" data-hp="999hp" data-e="1199e" data-extra="">
+                data-tipo="C-M" data-hp="1000" data-e="1200" data-extra="">
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/Ashido.png" alt="Ashido">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Ashido</h2>
@@ -483,12 +495,12 @@
                     <span class="preco">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://myheroacademia.fandom.com/wiki/Mina_Ashido" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="1" data-anime="Dragon Ball" data-personagem="Vegeta"
-                data-tipo="C-Te" data-hp="1099hp" data-e="1499e" data-extra="">
+                data-tipo="C-Te" data-hp="1100" data-e="1500" data-extra="">
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/Baby Vegeta 1.png" alt="Baby Vegeta Forma 1">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Baby Vegeta F1°</h2>
@@ -498,12 +510,12 @@
                     <span class="preco">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://dragonball.fandom.com/wiki/Baby" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="1" data-anime="Tokyo Revengers" data-personagem="Baji"
-                data-tipo="C-Te" data-hp="1199hp" data-e="999e" data-extra="">
+                data-tipo="C-Te" data-hp="1200" data-e="1000" data-extra="army">
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/Baji.png" alt="Baji">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Baji</h2>
@@ -513,12 +525,12 @@
                     <span class="preco">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://tokyorevengers.fandom.com/wiki/Keisuke_Baji" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="1" data-anime="Baki" data-personagem="Baki"
-                data-tipo="C-M" data-hp="999hp" data-e="999e" data-extra="">
+                data-tipo="C-M" data-hp="1000" data-e="1000" data-extra="">
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/Baki.png" alt="Baki">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Baki</h2>
@@ -528,12 +540,12 @@
                     <span class="preco">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://baki.fandom.com/wiki/Baki_Hanma" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="1" data-anime="Cavaleiros do Zodíaco" data-personagem="Ban"
-                data-tipo="C-M" data-hp="999hp" data-e="999e" data-extra="">
+                data-tipo="C-M" data-hp="1000" data-e="1000" data-extra="">
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/Ban leão.png" alt="Ban">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Ban</h2>
@@ -543,12 +555,12 @@
                     <span class="preco">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://saintseiya.fandom.com/pt-br/wiki/Ban_de_Le%C3%A3o_Menor" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="9" data-anime="Attack on Titan" data-personagem="Berthold"
-                data-tipo="C-M" data-hp="999hp" data-e="1299e" data-extra="">
+                data-tipo="C-M" data-hp="1000" data-e="1300" data-extra="">
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/Berthold.png" alt="Berthold">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Berthold</h2>
@@ -566,12 +578,12 @@
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://attackontitan.fandom.com/wiki/Bertholdt_Hoover_(Anime)" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="1" data-anime="Pokemon" data-personagem="Bulbassaur"
-                data-tipo="C-Te" data-hp="1499hp" data-e="1999e" data-extra="army">
+                data-tipo="C-Te" data-hp="1500" data-e="2000" data-extra="army">
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/Bulbassaur.png" alt="Bulbassaur">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Bulbassaur</h2>
@@ -581,12 +593,12 @@
                     <span class="preco">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://pokemon.fandom.com/wiki/Bulbasaur" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="1" data-anime="Dragon Ball" data-personagem="Burter"
-                data-tipo="C-M" data-hp="999hp" data-e="999e" data-extra="">
+                data-tipo="C-M" data-hp="1000" data-e="1000" data-extra="">
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/Burter.png" alt="Burter">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Burter</h2>
@@ -596,12 +608,12 @@
                     <span class="preco">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://dragonball.fandom.com/wiki/Burter" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="1" data-anime="One Punch Man" data-personagem="Canirante"
-                data-tipo="C-M" data-hp="999hp" data-e="999e" data-extra="">
+                data-tipo="C-M" data-hp="1000" data-e="1000" data-extra="">
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/Canirante.png" alt="Canirante">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Canirante</h2>
@@ -611,12 +623,12 @@
                     <span class="preco">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://dynami-battles.fandom.com/pt-br/wiki/Canirante" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="1" data-anime="Dragon Ball" data-personagem="Appule"
-                data-tipo="C-Te" data-hp="999hp" data-e="999e" data-extra="army">
+                data-tipo="C-Te" data-hp="1000" data-e="1000" data-extra="army">
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/Capanga 1.png" alt="Appule">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Appule</h2>
@@ -626,12 +638,12 @@
                     <span class="preco">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://dragonball.fandom.com/wiki/Appule" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="1" data-anime="Dragon Ball" data-personagem="Cui"
-                data-tipo="C-Te" data-hp="999hp" data-e="999e" data-extra="army">
+                data-tipo="C-Te" data-hp="1000" data-e="1000" data-extra="army">
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/Capanga 2.png" alt="Cui">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Cui</h2>
@@ -641,12 +653,12 @@
                     <span class="preco">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://dragonball-fandom-com.translate.goog/wiki/Cui?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt&_x_tr_pto=tc" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="1" data-anime="Dragon Ball" data-personagem="Soldier Freeza"
-                data-tipo="C-Te" data-hp="999hp" data-e="999e" data-extra="army">
+                data-tipo="C-Te" data-hp="1000" data-e="1000" data-extra="army">
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/Capanga 3.png" alt="Soldier Freeza">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Soldier Freeza</h2>
@@ -656,12 +668,12 @@
                     <span class="preco">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://dragonball.fandom.com/pt-br/wiki/Freeza_Soldier" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="1" data-anime="Dragon Ball" data-personagem="Abo"
-                data-tipo="C-Te" data-hp="1999hp" data-e="1499e" data-extra="army">
+                data-tipo="C-Te" data-hp="2000" data-e="1500" data-extra="army">
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/Capanga 4.png" alt="Abo">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Abo</h2>
@@ -671,12 +683,12 @@
                     <span class="preco">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://dragonball.fandom.com/pt-br/wiki/Abo" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="1" data-anime="Dragon Ball" data-personagem="Kado"
-                data-tipo="C-Te" data-hp="1999hp" data-e="1499e" data-extra="army">
+                data-tipo="C-Te" data-hp="2000" data-e="1500" data-extra="army">
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/Capanga 5.png" alt="Kado">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Kado</h2>
@@ -686,12 +698,12 @@
                     <span class="preco">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://dragonball.fandom.com/pt-br/wiki/Kado" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="1" data-anime="One Punch Man" data-personagem="Capitã Mizuki"
-                data-tipo="C-M" data-hp="999hp" data-e="999e" data-extra="girl">
+                data-tipo="C-M" data-hp="1000" data-e="1000" data-extra="girl">
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/Capitã Mizuki.png" alt="Capitã Mizuki">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Capitã Mizuki</h2>
@@ -701,12 +713,12 @@
                     <span class="preco">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://onepunchman.fandom.com/wiki/Mizuki" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="1" data-anime="Fairy Tail" data-personagem="Carla"
-                data-tipo="C-M" data-hp="599hp" data-e="1999e" data-extra="girl">
+                data-tipo="C-M" data-hp="600" data-e="2000" data-extra="girl">
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/Carla.png" alt="Carla">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Carla</h2>
@@ -716,12 +728,12 @@
                     <span class="preco">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://fairytail-fandom-com.translate.goog/wiki/Carla?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt&_x_tr_pto=wa" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="1" data-anime="Pokemon" data-personagem="Caterpie"
-                data-tipo="C-Te" data-hp="1499hp" data-e="1999e" data-extra="army">
+                data-tipo="C-Te" data-hp="1500" data-e="2000" data-extra="army">
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/Caterpie.png" alt="Caterpie">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Caterpie</h2>
@@ -731,12 +743,12 @@
                     <span class="preco">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://pokemon.fandom.com/wiki/Caterpie" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="2" data-anime="Dragon Ball" data-personagem="Caulifla"
-                data-tipo="C-M" data-hp="1099hp" data-e="1499e" data-extra="girl">
+                data-tipo="C-M" data-hp="1100" data-e="1500" data-extra="girl">
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/Caulifla.png" alt="Caulifla">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Caulifla</h2>
@@ -747,12 +759,12 @@
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://dragonball.fandom.com/pt-br/wiki/Caulifla" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="1" data-anime="One Punch Man" data-personagem="cavaleiro sem licença"
-                data-tipo="C-M" data-hp="899hp" data-e="999e" data-extra="">
+                data-tipo="C-M" data-hp="900" data-e="1000" data-extra="">
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/cavaleiro sem licença.png" alt="cavaleiro sem licença">
                 <div class="informacoes">
                     <h2 class="nome-personagem">cavaleiro sem licença</h2>
@@ -762,12 +774,12 @@
                     <span class="preco">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://onepunchman.fandom.com/pt-br/wiki/Satoru" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="2" data-anime="Dragon Ball" data-personagem="Cell"
-                data-tipo="C-M" data-hp="999hp" data-e="999e" data-extra="">
+                data-tipo="C-M" data-hp="1000" data-e="1000" data-extra="">
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/Cell 1.png" alt="Cell Primeira Forma">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Cell 1° Forma</h2>
@@ -778,12 +790,12 @@
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://dragonball.fandom.com/pt-br/wiki/Cell" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="3" data-anime="Dragon Ball" data-personagem="Cell"
-                data-tipo="C-Te" data-hp="2199hp" data-e="1499e" data-extra="">
+                data-tipo="C-Te" data-hp="2200p" data-e="1500" data-extra="">
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/Cell semi.png" alt="Cell Semi-Perfeito">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Cell Semi-Perfeito</h2>
@@ -795,12 +807,12 @@
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://dragonball.fandom.com/pt-br/wiki/Cell" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="1" data-anime="Pokemon" data-personagem="Charmander"
-                data-tipo="C-Te" data-hp="1499hp" data-e="1999e" data-extra="army">
+                data-tipo="C-Te" data-hp="1500" data-e="2000" data-extra="army">
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/Charmander.png" alt="Charmander">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Charmander</h2>
@@ -810,12 +822,12 @@
                     <span class="preco">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://pokemon.fandom.com/wiki/Charmander" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="2" data-anime="Nanatsu No Taizai" data-personagem="Chastefol"
-                data-tipo="C-Te" data-hp="1499hp" data-e="infinito" data-extra="c-gg">
+                data-tipo="C-Te" data-hp="1500" data-e="compartilhada" data-extra="c-gg" data-extra="e-com">
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/Chastefol 2.png" alt="Chastefol 2° Forma">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Chastefol 2° Forma</h2>
@@ -826,12 +838,12 @@
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://nanatsu-no-taizai.fandom.com/wiki/Chastiefol" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="1" data-anime="Nanatsu No Taizai" data-personagem="Chastefol"
-                data-tipo="C-Te" data-hp="499hp" data-e="infinito" data-extra="">
+                data-tipo="C-Te" data-hp="500" data-e="compartilhada" data-extra="e-com">
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/Chastefol 5.png" alt="Chastefol 5° Forma">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Chastefol 5° Forma</h2>
@@ -841,12 +853,12 @@
                     <span class="preco">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://nanatsu-no-taizai.fandom.com/wiki/Chastiefol" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="1" data-anime="Nanatsu No Taizai" data-personagem="Chastefol"
-                data-tipo="C-Te" data-hp="699hp" data-e="infinito" data-extra="">
+                data-tipo="C-Te" data-hp="700" data-e="compartilhada" data-extra="e-com">
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/Chastefol.png" alt="Chastefol">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Chastefol</h2>
@@ -856,12 +868,12 @@
                     <span class="preco">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://nanatsu-no-taizai.fandom.com/wiki/Chastiefol" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="1" data-anime="Overlord" data-personagem="CZ2128"
-                data-tipo="C-M" data-hp="999hp" data-e="999e" data-extra="girl">
+                data-tipo="C-M" data-hp="1000" data-e="1000" data-extra="girl">
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/CZ2128.png" alt="CZ2128">
                 <div class="informacoes">
                     <h2 class="nome-personagem">CZ2128</h2>
@@ -871,12 +883,12 @@
                     <span class="preco">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://overlordmaruyama.fandom.com/wiki/CZ2128_Delta" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="1" data-anime="Jujutsu Kaisen" data-personagem="Cães Divinos"
-                data-tipo="C-Te" data-hp="799hp" data-e="999e" data-extra="">
+                data-tipo="C-Te" data-hp="800" data-e="1000" data-extra="">
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/Cães Divinos.png" alt="Cães Divinos">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Cães Divinos</h2>
@@ -886,12 +898,12 @@
                     <span class="preco">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://jujutsukaisen.fandom.com/pt-br/wiki/C%C3%A3es_Divinos" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="1" data-anime="Boku no Hero" data-personagem="Tokoyami"
-                data-tipo="C-Te" data-hp="1499hp" data-e="1199e" data-extra="">
+                data-tipo="C-Te" data-hp="1500" data-e="1200" data-extra="">
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/Dark Shadow.png" alt="Cães Divinos">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Dark Shadow</h2>
@@ -901,12 +913,12 @@
                     <span class="preco">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://myheroacademia.fandom.com/wiki/Fumikage_Tokoyami" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="2" data-anime="Konosuba" data-personagem="Darkness"
-                data-tipo="C-M" data-hp="1499hp" data-e="999e" data-extra="girl">
+                data-tipo="C-M" data-hp="1500" data-e="1000" data-extra="girl" data-extra="c-gg">
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/Darkness.png" alt="Darkness">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Darkness</h2>
@@ -917,12 +929,12 @@
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://konosuba-fandom-com.translate.goog/wiki/Darkness?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt&_x_tr_pto=tc" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>
-            <li class="carta" data-categoria="Comum" data-preco="1" data-anime="Re:zero" data-personagem="Petelgeuse Dedos"
-                data-tipo="C-Te" data-hp="999hp" data-e="999e" data-extra="">
+            <li class="carta" data-categoria="Comum" data-preco="1" data-anime="Re:zero" data-personagem="Dedos"
+                data-tipo="C-Te" data-hp="1000" data-e="1000" data-extra="">
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/Dedos Petelgeuse.png" alt="Dedos do Petelgeuse">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Dedos Petelgeuse</h2>
@@ -932,12 +944,12 @@
                     <span class="preco">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://rezero.fandom.com/wiki/Petelgeuse_Roman%C3%A9e-Conti" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="1" data-anime="Chainsaw Man" data-personagem="Denji"
-                data-tipo="C-M" data-hp="999hp" data-e="99e" data-extra="">
+                data-tipo="C-M" data-hp="1000" data-e="100" data-extra="">
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/Denji.png" alt="Denji">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Denji</h2>
@@ -947,12 +959,12 @@
                     <span class="preco">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://chainsaw-man.fandom.com/wiki/Denji" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="1" data-anime="Jojo" data-personagem="Dio"
-                data-tipo="C-M" data-hp="999hp" data-e="1199e" data-extra="">
+                data-tipo="C-M" data-hp="1000" data-e="1200" data-extra="">
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/Dio.png" alt="Dio Parte 1">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Dio</h2>
@@ -962,12 +974,12 @@
                     <span class="preco">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://jjba.fandom.com/pt-br/wiki/Dio_Brando" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="1" data-anime="Fairy Tail" data-personagem="Droy"
-                data-tipo="C-M" data-hp="999hp" data-e="999e" data-extra="">
+                data-tipo="C-M" data-hp="1000" data-e="1000" data-extra="">
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/Droy.png" alt="Droy">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Droy</h2>
@@ -977,12 +989,12 @@
                     <span class="preco">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://fairytail.fandom.com/wiki/Droy" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="1" data-anime="Fullmetal Alchemist" data-personagem="Edward"
-                data-tipo="C-M" data-hp="999hp" data-e="1199e" data-extra="">
+                data-tipo="C-M" data-hp="1000" data-e="1200" data-extra="">
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/Edward.png" alt="Edward">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Edward</h2>
@@ -992,13 +1004,13 @@
                     <span class="preco">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://fma.fandom.com/wiki/Edward_Elric" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="1" data-anime="Pokemon" data-personagem="Ekans"
-                data-tipo="C-Te" data-hp="1499hp" data-e="1999e" data-extra="army">
-                <img src="./src/imagens/CARTAS mas organizadas/Comum/Ekans.png" alt="Edward">
+                data-tipo="C-Te" data-hp="1500" data-e="2000" data-extra="army">
+                <img src="./src/imagens/CARTAS mas organizadas/Comum/Ekans.png" alt="Ekans">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Ekans</h2>
                     <span class="anime-personagem">Anime: Pokemon</span>
@@ -1007,12 +1019,12 @@
                     <span class="preco">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://www.pokemon.com/br/pokedex/ekans" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="1" data-anime="Overlord" data-personagem="Entoma"
-                data-tipo="C-M" data-hp="1299hp" data-e="1599e" data-extra="girl">
+                data-tipo="C-M" data-hp="1300" data-e="1600" data-extra="girl">
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/Entoma.png" alt="Entoma">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Entoma</h2>
@@ -1022,12 +1034,12 @@
                     <span class="preco">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://overlordmaruyama.fandom.com/wiki/Entoma_Vasilissa_Zeta" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="1" data-anime="Attack on Titan" data-personagem="Eren"
-                data-tipo="C-M" data-hp="899hp" data-e="999e" data-extra="">
+                data-tipo="C-M" data-hp="900" data-e="1000" data-extra="">
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/Eren Jaeger.png" alt="Eren">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Eren</h2>
@@ -1037,12 +1049,12 @@
                     <span class="preco">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://attackontitan.fandom.com/pt-br/wiki/Eren_Yeager" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="8" data-anime="Boku no Hero" data-personagem="Eri"
-                data-tipo="C-Te" data-hp="599hp" data-e="infinito" data-extra="girl">
+                data-tipo="C-Te" data-hp="600" data-e="0" data-extra="girl">
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/Eri Rewind Descontrole.png" alt="Eri Rewind Descontrolado">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Eri Rewind</h2>
@@ -1059,12 +1071,12 @@
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://myheroacademia.fandom.com/wiki/Eri" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="8" data-anime="Boku no Hero" data-personagem="Eri"
-                data-tipo="C-Te" data-hp="599hp" data-e="infinito" data-extra="girl">
+                data-tipo="C-Te" data-hp="600" data-e="0" data-extra="girl">
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/Eri Rewind.png" alt="Eri Rewind Ativado">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Eri Rewind</h2>
@@ -1081,12 +1093,12 @@
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://myheroacademia.fandom.com/wiki/Eri" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>
             <li class="carta" data-categoria="Comum" data-preco="8" data-anime="Boku no Hero" data-personagem="Eri"
-                data-tipo="C-M" data-hp="599hp" data-e="infinito" data-extra="girl">
+                data-tipo="C-M" data-hp="600" data-e="0" data-extra="girl">
                 <img src="./src/imagens/CARTAS mas organizadas/Comum/Eri.png" alt="Eri">
                 <div class="informacoes">
                     <h2 class="nome-personagem">Eri</h2>
@@ -1103,7 +1115,7 @@
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                             <img src="./src/imagens/Starball_Red.svg" class="estrela">
                     </span>
-                    <a href="https://wa.me/558396322427?text=Quero comprar essa carta Nyxsombra!" class="btn-comprar"
+                    <a href="https://myheroacademia.fandom.com/wiki/Eri" class="btn-comprar"
                         target="_blank">+ Informações</a>
                 </div>
             </li>

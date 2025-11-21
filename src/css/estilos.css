@@ -15,6 +15,11 @@ body{
     margin: 0 auto;
 }
 
+.container .preco-cartas .hpe{
+    margin-top: 25px;
+
+}
+
 .container .produtos{
     color: #6528D3;
     font-size: 24px;
@@ -89,7 +94,8 @@ body{
 }
 
 .container .cartas .carta{
-    max-width: 265px;
+    max-width: 210px;
+    max-height: 600px;
     background-color: #EDEDED;
     color: #0E0027;
     border-radius: 20px;
